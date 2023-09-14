@@ -13,7 +13,10 @@
     url('./fonts/vazir/Vazir-Medium.ttf') format('truetype');
   font-display: swap;
 }
+
+
 #root {
+
   font-family:  Vazir !important;
 }
 /* @font-face {
