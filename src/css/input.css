@@ -13,7 +13,7 @@
     url('./fonts/vazir/Vazir-Medium.ttf') format('truetype');
   font-display: swap;
 }
-
+[x-cloak] { display: none !important; }
 
 #root {
 
