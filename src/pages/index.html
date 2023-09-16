@@ -8,7 +8,17 @@
 </head>
 
 
-<body class="max-w-2xl lg:max-w-6xl text-sm lg:text-sm mx-auto bg-gray-200 border  border-white p-4">
+<body class="max-w-xl text-sm lg:text-sm mx-auto bg-gradient-to-r from-red-400 to-blue-400 border  border-white p-4">
+
+<div x-data="{ liBotBorder : 1 }" class="mb-10 mx-auto border border-gray-500 w-full rounded-lg p-5">
+  <ul class="flex flex-row gap-2 ">
+    <li x-on:click = " liBotBorder = 1" x-bind:class =" liBotBorder == 1?'border-b-2':'border-none'  " class="cursor-pointer p-2 border-gray-900">Sign-up</li>
+    <li x-on:click = " liBotBorder = 2" x-bind:class =" liBotBorder == 2?'border-b-2':'border-none'" class="cursor-pointer p-2 border-gray-900">Sign-in</li>
+  </ul>
+</div>
+
+
+
   <div  x-data="{ dropDownShow : false}"   class="flex flex-wrap lg:flex-nowrap w-full p-4 bg-gray-700 text-gray-200 justify-between">
     <div class=" mb-2">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-4 sm:float-left ">
